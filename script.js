@@ -23,7 +23,7 @@ function typeEffect() {
   let speed = isDeleting ? 60 : 100;
 
   if (!isDeleting && charIndex === currentWord.length) {
-    speed = 1500; // pause after typing
+    speed = 1500; 
     isDeleting = true;
   } 
   else if (isDeleting && charIndex === 0) {
