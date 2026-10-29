@@ -1071,3 +1071,69 @@ a { color: inherit; }
   .word { transition: none; }
   .btn, .project__title { transition: none; }
 }
+
+/* Experience section: keep the heading in the normal document flow */
+#experience .xp {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+#experience .xp__heading {
+  position: relative !important;
+  inset: auto !important;
+  transform: none !important;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 0 2.5rem;
+  padding: 0;
+}
+
+#experience .xp__title {
+  position: static !important;
+  inset: auto !important;
+  transform: none !important;
+  writing-mode: horizontal-tb !important;
+  white-space: normal !important;
+  float: none !important;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
+
+#experience .section-eyebrow {
+  position: static !important;
+  display: block;
+  margin: 0 0 0.75rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+}
+
+#experience .xp__list {
+  position: relative;
+  clear: both;
+  width: 100%;
+}
+
+#experience .role {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 700px) {
+  #experience .xp__heading {
+    margin-bottom: 1.75rem;
+  }
+
+  #experience .xp__title {
+    font-size: clamp(2.4rem, 10vw, 3.5rem);
+  }
+}
