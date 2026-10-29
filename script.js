@@ -47,7 +47,7 @@
      1. Typing effect (your original logic, kept)
   ------------------------------------------------------------------ */
   const textElement = document.getElementById('typing-text');
-  const words = ['Digital Creator', 'Software Developer'];
+  const words = ['Software Developer', 'Digital Creator'];
 
   if (textElement) {
     if (reduceMotion) {
