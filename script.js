@@ -158,7 +158,7 @@
     ctx.clearRect(0, 0, W, H);
 
     const hot = [];
-    ctx.fillStyle = 'rgba(15, 15, 18, 0.14)';
+    ctx.fillStyle = 'rgba(43, 29, 20, 0.14)';
     ctx.beginPath();
 
     for (let x = SPACING / 2; x < W; x += SPACING) {
@@ -186,7 +186,7 @@
     ctx.fill();
 
     hot.forEach(([x, y, r, a]) => {
-      ctx.fillStyle = `rgba(45, 59, 255, ${a})`;
+      ctx.fillStyle = `rgba(140, 90, 60, ${a})`;
       ctx.beginPath();
       ctx.arc(x, y, r, 0, Math.PI * 2);
       ctx.fill();
