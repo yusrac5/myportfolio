@@ -331,10 +331,10 @@
   } */
 
 :root {
-  --paper: #0b1626;
-  --panel: #13253b;
+  --paper: #070e1b;
+  --panel: #0f1d31;
   --ink: #f1e6d3;
-  --brown: #5b3a25;
+  --brown: #4b2f1e;
   --accent: #c98b5a;
   --accent-light: #e3ad7e;
   --muted: rgba(241, 230, 211, 0.64);
@@ -811,13 +811,13 @@ a { color: inherit; }
 
 /* ---------- Dark navy + brown theme overrides ---------- */
 
-.nav.is-scrolled { background: rgba(11, 22, 38, 0.85); }
+.nav.is-scrolled { background: rgba(7, 14, 27, 0.85); }
 .nav__logo:hover { background: var(--accent); border-color: var(--accent); color: var(--paper); }
 .nav__menu a:hover { background: rgba(241, 230, 211, 0.08); }
 .nav__menu .nav__cta { background: var(--accent); color: var(--paper); }
 .nav__menu .nav__cta:hover { background: var(--accent-light); }
 
-.hero { background: radial-gradient(90% 75% at 88% 8%, #1d3a5c 0%, var(--paper) 62%); }
+.hero { background: radial-gradient(80% 70% at 92% 0%, #13294a 0%, #070e1b 68%); }
 .hero__portrait { background: var(--panel); }
 .hero__portrait::before { background: var(--brown); }
 .hero__portrait::after { color: var(--ink); }
