@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -230,6 +230,340 @@
       </p>
     </div>
   </section>
+
+  <script src="script.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#2a34ff" />
+  <meta name="description" content="Yusra Choudhary is a Software Engineering student at Western University building impactful, human-centered products. Projects, experience, and leadership." />
+  <meta property="og:title" content="Yusra Choudhary | Software Developer" />
+  <meta property="og:description" content="Software developer building impactful, human-centered products. Projects, leadership, and experience." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yusrac5.github.io/myportfolio/" />
+  <meta property="og:image" content="https://yusrac5.github.io/myportfolio/og-cover.png" />
+  <title>Yusra Choudhary | Software Developer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <a class="skip" href="#projects">Skip to content</a>
+
+  <nav class="nav" id="nav" aria-label="Primary">
+    <a class="nav__logo" href="#top" aria-label="Yusra Choudhary, back to top">YC</a>
+
+    <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu">
+      <span></span><span></span>
+    </button>
+
+    <ul class="nav__menu" id="navMenu">
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#leadership">Leadership</a></li>
+      <li><a href="#contact" class="nav__cta">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" id="top">
+    <canvas class="hero__field" id="field" aria-hidden="true"></canvas>
+
+    <p class="hero__kicker">Software Engineering student at <strong>Western University</strong></p>
+
+    <h1 class="hero__name" aria-label="Yusra Choudhary">
+      <span class="hero__line" aria-hidden="true">
+        <span data-split>Yusra</span><span class="hero__photo"><img src="profile.jpg" alt="Yusra Choudhary portrait" onerror="this.remove()" /></span>
+      </span>
+      <span class="hero__line" aria-hidden="true"><span data-split>Choudhary</span></span>
+    </h1>
+
+    <div class="hero__bottom">
+      <div>
+        <p class="hero__role">I am a <span id="typing-text"></span><span class="cursor">|</span></p>
+        <p class="hero__lede">
+          I build human-centered digital experiences, and I thrive at the intersection of engineering,
+          design, and leadership, turning complex ideas into meaningful solutions.
+        </p>
+      </div>
+
+      <div class="hero__buttons">
+        <a href="#projects" class="btn btn--primary">View projects</a>
+        <a href="#contact" class="btn btn--ghost">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- STATEMENT + FACTS -->
+    <section class="band statement" aria-label="Introduction">
+      <p class="statement__text" id="statement" data-words>
+        Designing and building impactful software at the intersection of engineering, design, and leadership.
+      </p>
+
+      <dl class="facts">
+        <div class="fact">
+          <dt><span class="fact__num" data-count="200" data-suffix="+">200+</span></dt>
+          <dd>engineering students reached by the national leadership conference I led communications for</dd>
+        </div>
+        <div class="fact">
+          <dt><span class="fact__num" data-count="44">44</span></dt>
+          <dd>institutions across Canada represented at that conference</dd>
+        </div>
+        <div class="fact">
+          <dt><span class="fact__num" data-count="4000">4,000</span></dt>
+          <dd>backpacks distributed through a province-scale equity initiative</dd>
+        </div>
+      </dl>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="band" id="projects" aria-labelledby="projects-title">
+      <h2 class="band__title" id="projects-title">Projects</h2>
+
+      <div class="projects">
+
+        <article class="project" data-img="zipandsip.jpg">
+          <div class="project__head">
+            <h3 class="project__title">Zip &amp; Sip</h3>
+            <span class="chip chip--award">MLH SHEhacks+ winner</span>
+          </div>
+          <div class="project__body">
+            <img class="project__media" src="zipandsip.jpg" alt="Zip &amp; Sip app screenshot" loading="lazy" onerror="this.remove()" />
+            <p class="project__desc">
+              Social mobile app turning daily habits into community engagement through gamification
+              and AI-powered insights.
+            </p>
+            <ul class="chips" aria-label="Tech used">
+              <li>React Native</li><li>MongoDB Atlas</li><li>Cloudflare</li><li>MapView</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project__head">
+            <h3 class="project__title">Healthcare Camp Data Collection App</h3>
+          </div>
+          <div class="project__body">
+            <p class="project__desc">
+              Secure healthcare app for patient tracking, vision test input, and appointment management.
+            </p>
+            <ul class="chips" aria-label="Tech used">
+              <li>React Native</li><li>Expo</li><li>Express.js</li><li>PostgreSQL</li><li>JWT</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project" data-img="unitygame.jpg">
+          <div class="project__head">
+            <h3 class="project__title">Unity 3D Adventure</h3>
+          </div>
+          <div class="project__body">
+            <img class="project__media" src="unitygame.jpg" alt="Unity 3D game screenshot" loading="lazy" onerror="this.remove()" />
+            <p class="project__desc">
+              3D adventure game with custom mechanics, physics-based interactions, and dynamic camera systems.
+            </p>
+            <ul class="chips" aria-label="Tech used">
+              <li>Unity</li><li>C#</li><li>Physics</li><li>Collision Detection</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="band" id="experience" aria-labelledby="experience-title">
+      <div class="xp">
+        <h2 class="band__title xp__title" id="experience-title">Experience</h2>
+
+        <div class="xp__list">
+
+          <article class="role">
+            <p class="role__when">
+              <span class="role__dates"><span class="live" aria-hidden="true"></span>Sep 2025 – Present</span>
+              <span class="role__place">London, ON</span>
+            </p>
+            <div>
+              <h3 class="role__title">Outreach Coordinator</h3>
+              <p class="role__org">Western Engineering</p>
+              <p class="role__desc">
+                Organized and audited EDIDA resources across Western Engineering, collaborated with faculty to improve accessibility,
+                and updated official webpages using Cascade.
+              </p>
+            </div>
+          </article>
+
+          <article class="role">
+            <p class="role__when">
+              <span class="role__dates">May 2025 – Aug 2025</span>
+              <span class="role__place">London, ON</span>
+            </p>
+            <div>
+              <h3 class="role__title">Web Designer</h3>
+              <p class="role__org">St. Joseph’s Health Care</p>
+              <p class="role__desc">
+                Redesigned web layouts, improved UX and accessibility, and implemented custom interactive elements to better communicate
+                research initiatives.
+              </p>
+            </div>
+          </article>
+
+          <article class="role">
+            <p class="role__when">
+              <span class="role__dates">Jul 2025 – Aug 2025</span>
+              <span class="role__place">London, ON</span>
+            </p>
+            <div>
+              <h3 class="role__title">Special Events Program Planner</h3>
+              <p class="role__org">Thames Valley DSB</p>
+              <p class="role__desc">
+                Coordinated province-scale initiatives including the distribution of 4,000 backpacks and supported sponsorship and
+                marketing for equitable student access.
+              </p>
+            </div>
+          </article>
+
+          <article class="role">
+            <p class="role__when">
+              <span class="role__dates">Sep 2023 – Apr 2025</span>
+              <span class="role__place">London, ON</span>
+            </p>
+            <div>
+              <h3 class="role__title">Social Media Coordinator</h3>
+              <p class="role__org">Western Communications</p>
+              <p class="role__desc">
+                Created social content, filmed and edited videos, and strengthened engagement across diverse
+                student and alumni audiences.
+              </p>
+            </div>
+          </article>
+
+          <article class="role">
+            <p class="role__when">
+              <span class="role__dates">May 2024 – Sep 2024</span>
+              <span class="role__place">London, ON</span>
+            </p>
+            <div>
+              <h3 class="role__title">Research Metrics Assistant</h3>
+              <p class="role__org">Faculty of Engineering</p>
+              <p class="role__desc">
+                Analyzed publication and citation data, maintained research websites, and supported data-driven strategic planning.
+              </p>
+            </div>
+          </article>
+
+          <article class="role">
+            <p class="role__when">
+              <span class="role__dates">May 2024 – Sep 2024</span>
+              <span class="role__place">Toronto, ON</span>
+            </p>
+            <div>
+              <h3 class="role__title">Marketing Intern</h3>
+              <p class="role__org">Aionios Med Spa</p>
+              <p class="role__desc">
+                Led influencer collaborations, executed retention campaigns, and optimized WordPress content with SEO best practices.
+              </p>
+            </div>
+          </article>
+
+          <article class="role">
+            <p class="role__when">
+              <span class="role__dates">May 2023 – Sep 2023</span>
+              <span class="role__place">Toronto, ON</span>
+            </p>
+            <div>
+              <h3 class="role__title">Software Intern</h3>
+              <p class="role__org">smartARM</p>
+              <p class="role__desc">
+                Developed embedded software for prosthetic devices and enhanced internal tools and web infrastructure.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- LEADERSHIP -->
+    <section class="band" id="leadership" aria-labelledby="leadership-title">
+      <h2 class="band__title" id="leadership-title">Leadership</h2>
+
+      <div class="lead">
+
+        <article class="lead__card lead__card--blue">
+          <p class="lead__dates">Mar 2025 – Jan 2026</p>
+          <h3 class="lead__title">Vice-President Communications</h3>
+          <p class="lead__org">Canadian Engineering Leadership Conference</p>
+          <p class="lead__desc">
+            Led conference branding and digital communications for a national conference engaging
+            200+ engineering students from 44 institutions across Canada. Oversaw media creation,
+            and branding for CELC 2026.
+          </p>
+          <a class="lead__link" target="_blank" rel="noopener"
+             href="https://www.eng.uwo.ca/media/news/2026/Western-Engineering-Hosts-National-Conference-on-Leadership-in-Engineering.html">
+            Read the news story<span class="sr-only"> about the Canadian Engineering Leadership Conference</span>
+          </a>
+        </article>
+
+        <article class="lead__card lead__card--blue">
+          <p class="lead__dates">Mar 2024 – Nov 2024</p>
+          <h3 class="lead__title">Vice-President Communications</h3>
+          <p class="lead__org">Conference on Diversity in Engineering</p>
+          <p class="lead__desc">
+            Directed digital branding and communications for a national conference, launched the
+            official website, and coordinated sponsor and delegate materials.
+          </p>
+          <a class="lead__link" target="_blank" rel="noopener"
+             href="https://www.eng.uwo.ca/media/news/2024/Western-Engineering-Hosts-National-Conference-on-Diversity-in-Engineering.html">
+            Read the news story<span class="sr-only"> about the Conference on Diversity in Engineering</span>
+          </a>
+        </article>
+
+        <article class="lead__card lead__card--wide">
+          <p class="lead__dates">Sep 2023 – Apr 2025</p>
+          <h3 class="lead__title">Wellness Commissioner</h3>
+          <p class="lead__org">Western Undergraduate Engineering Society</p>
+          <p class="lead__desc">
+            Led wellness initiatives for engineering students, collaborated on mental health strategy,
+            and advocated for improved student support resources.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- CONTACT -->
+  <footer class="contact" id="contact">
+    <h2 class="contact__title">Let’s work together.</h2>
+    <p class="contact__lede">Email me or find me on LinkedIn.</p>
+
+    <div class="contact__links">
+      <a class="contact__mail" href="mailto:yusra.choudhary5@gmail.com">yusra.choudhary5@gmail.com</a>
+      <a class="contact__in" href="https://www.linkedin.com/in/yusrachoudhary/" target="_blank" rel="noopener">
+        linkedin.com/in/yusrachoudhary
+      </a>
+    </div>
+
+    <p class="contact__fine">© <span id="year">2026</span> Yusra Choudhary</p>
+  </footer>
+
+  <!-- Floating image preview for project rows (desktop hover only) -->
+  <div class="peek" id="peek" aria-hidden="true">
+    <div class="peek__inner"><img src="" alt="" /></div>
+  </div>
 
   <script src="script.js"></script>
 </body>
