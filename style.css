@@ -334,9 +334,9 @@
   --paper: #070e1b;
   --panel: #0f1d31;
   --ink: #f1e6d3;
-  --brown: #4b2f1e;
-  --accent: #c98b5a;
-  --accent-light: #e3ad7e;
+  --brown: #e9dcc5;
+  --accent: #f4b6cf;
+  --accent-light: #ffd3e4;
   --muted: rgba(241, 230, 211, 0.64);
   --line: rgba(241, 230, 211, 0.16);
 
@@ -454,8 +454,8 @@ a { color: inherit; }
   background: var(--accent); animation: pulse 1.8s ease-out infinite;
 }
 @keyframes pulse {
-  0% { box-shadow: 0 0 0 0 rgba(201, 139, 90, 0.55); }
-  100% { box-shadow: 0 0 0 0.7rem rgba(201, 139, 90, 0); }
+  0% { box-shadow: 0 0 0 0 rgba(244, 182, 207, 0.55); }
+  100% { box-shadow: 0 0 0 0.7rem rgba(244, 182, 207, 0); }
 }
 
 .hero__name {
@@ -851,3 +851,22 @@ a { color: inherit; }
   .nav__toggle[aria-expanded='true'] { color: var(--ink); border-color: var(--ink); }
   .nav:has(.is-open) .nav__logo { color: var(--ink); border-color: var(--ink); }
 }
+
+/* ---------- Pink + beige update ---------- */
+
+.marquee { color: var(--paper); }
+.marquee__track span::after { color: #d6578f; }
+
+.project:hover { color: var(--paper); }
+.project:hover .project__kind { color: rgba(7, 14, 27, 0.7); }
+
+.contact { color: var(--paper); }
+.contact__title { color: var(--paper); }
+.contact__mail, .contact__in { background-image: linear-gradient(var(--paper), var(--paper)); }
+.contact__mail:hover, .contact__in:hover { color: #c2417a; }
+.contact__fine { border-top-color: rgba(7, 14, 27, 0.25); color: rgba(7, 14, 27, 0.75); }
+.contact :focus-visible { outline-color: var(--paper); }
+
+.code { background: var(--brown); border: none; color: #14202f; }
+.code .c-k { color: #b03a6c; }
+.code .c-s { color: #1f3a5f; opacity: 1; }

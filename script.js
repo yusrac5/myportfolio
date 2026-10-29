@@ -186,7 +186,7 @@
     ctx.fill();
 
     hot.forEach(([x, y, r, a]) => {
-      ctx.fillStyle = `rgba(227, 173, 126, ${a})`;
+      ctx.fillStyle = `rgba(244, 182, 207, ${a})`;
       ctx.beginPath();
       ctx.arc(x, y, r, 0, Math.PI * 2);
       ctx.fill();
