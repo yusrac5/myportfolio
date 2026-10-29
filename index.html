@@ -239,14 +239,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#f7f1ff" />
+  <meta name="theme-color" content="#6b4025" />
   <meta name="description" content="Yusra Choudhary is a recent Software Engineering graduate from Western University building impactful, human-centered products. Projects, experience, and leadership." />
   <meta property="og:title" content="Yusra Choudhary | Software Developer" />
   <meta property="og:description" content="Recent software engineering graduate building impactful, human-centered products. Projects, leadership, and experience." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://yusrac5.github.io/myportfolio/" />
   <meta property="og:image" content="https://yusrac5.github.io/myportfolio/og-cover.png" />
-
   <title>Yusra Choudhary | Software Developer</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -254,9 +253,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="palette.css" />
 </head>
-
 <body>
 
   <a class="skip" href="#projects">Skip to content</a>
@@ -280,18 +277,11 @@
   <header class="hero" id="top">
     <canvas class="hero__field" id="field" aria-hidden="true"></canvas>
 
-    <p class="hero__kicker">
-      Recent software engineering graduate from
-      <strong>Western University</strong>
-    </p>
+    <p class="hero__kicker">Recent software engineering graduate from <strong>Western University</strong></p>
 
     <h1 class="hero__name" aria-label="Yusra Choudhary">
-      <span class="hero__line" aria-hidden="true">
-        <span data-split>Yusra</span>
-      </span>
-      <span class="hero__line" aria-hidden="true">
-        <span data-split>Choudhary</span>
-      </span>
+      <span class="hero__line" aria-hidden="true"><span data-split>Yusra</span></span>
+      <span class="hero__line" aria-hidden="true"><span data-split>Choudhary</span></span>
     </h1>
 
     <figure class="hero__portrait">
@@ -300,14 +290,10 @@
 
     <div class="hero__bottom">
       <div>
-        <p class="hero__role">
-          I am a <span id="typing-text"></span><span class="cursor">|</span>
-        </p>
-
+        <p class="hero__role">I am a <span id="typing-text"></span><span class="cursor">|</span></p>
         <p class="hero__lede">
-          I build human-centered digital experiences, and I thrive at the
-          intersection of engineering, design, and leadership, turning complex
-          ideas into meaningful solutions.
+          I build human-centered digital experiences, and I thrive at the intersection of engineering,
+          design, and leadership, turning complex ideas into meaningful solutions.
         </p>
       </div>
 
@@ -323,32 +309,21 @@
     <!-- STATEMENT + FACTS -->
     <section class="band statement" aria-label="Introduction">
       <p class="statement__text" id="statement" data-words>
-        Designing and building impactful software at the intersection of
-        engineering, design, and leadership.
+        Designing and building impactful software at the intersection of engineering, design, and leadership.
       </p>
 
       <dl class="facts">
         <div class="fact">
           <dt><span class="fact__num" data-count="3">3</span></dt>
-          <dd>full-stack apps bringing real-world ideas to life</dd>
+          <dd>full-stack apps built, from the database to the interface</dd>
         </div>
-
         <div class="fact">
-          <dt>
-            <span class="fact__num" data-count="200" data-suffix="+">200+</span>
-          </dt>
-          <dd>
-            engineering students connected through a national conference
-            spanning 44 institutions
-          </dd>
+          <dt><span class="fact__num" data-count="200" data-suffix="+">200+</span></dt>
+          <dd>engineering students from 44 institutions at the national conference I led communications for</dd>
         </div>
-
         <div class="fact">
           <dt><span class="fact__num" data-count="4000">4,000</span></dt>
-          <dd>
-            backpacks delivered to local students through the Best First Day
-            initiative
-          </dd>
+          <dd>backpacks packed and distributed to students across the Thames Valley District School Board</dd>
         </div>
       </dl>
     </section>
@@ -363,30 +338,16 @@
           <div class="project__head">
             <h3 class="project__title">Zip &amp; Sip</h3>
             <p class="project__kind">Mobile app</p>
-            <span class="chip chip--award">
-              SHEhacks+ winner: Best AI Application using Cloudflare (MLH)
-            </span>
+            <span class="chip chip--award">SHEhacks+ winner: Best AI Application using Cloudflare (MLH)</span>
           </div>
-
           <div class="project__body">
-            <img
-              class="project__media"
-              src="zipandsip.jpg"
-              alt="Zip &amp; Sip app screenshot"
-              loading="lazy"
-              onerror="this.remove()"
-            />
-
-            <p class="project__desc">
-              Built an award-winning React Native app that makes matcha
-              tracking social, with streaks, nearby café recommendations,
-              and AI-powered spending insights.
-            </p>
-
+            <img class="project__media" src="zipandsip.jpg" alt="Zip &amp; Sip app screenshot" loading="lazy" onerror="this.remove()" />
+            <ul class="points">
+              <li>Developed and launched a cross-platform React Native app that gamified matcha consumption through logging, streaks, live feeds, and community engagement.</li>
+              <li>Built full-stack functionality with React Native and MongoDB Atlas, integrating geolocation and Cloudflare-powered AI to recommend nearby cafés and project monthly spend so users can budget.</li>
+            </ul>
             <ul class="chips" aria-label="Tech used">
-              <li>React Native</li>
-              <li>MongoDB Atlas</li>
-              <li>Cloudflare</li>
+              <li>React Native</li><li>MongoDB Atlas</li><li>Cloudflare</li>
             </ul>
           </div>
         </article>
@@ -396,23 +357,14 @@
             <h3 class="project__title">Healthcare Camp Data Collection</h3>
             <p class="project__kind">Mobile app</p>
           </div>
-
           <div class="project__body">
-            <p class="project__desc">
-              Built a secure React Native healthcare app for patient tracking,
-              vision-test collection, and appointment management, with
-              role-based access and fingerprint login.
-            </p>
-
+            <ul class="points">
+              <li>Built a cross-platform healthcare app for a physician serving rural communities abroad, supporting patient tracking, vision-test data collection, and appointment management.</li>
+              <li>Implemented REST APIs with JWT authentication, role-based access control, and fingerprint login to protect patient data and restrict access by user role.</li>
+              <li>Collaborated with the physician and dev team through iterative feedback, tracking requirements in Jira and Confluence and managing code in GitHub.</li>
+            </ul>
             <ul class="chips" aria-label="Tech used">
-              <li>React Native</li>
-              <li>Expo</li>
-              <li>Express.js</li>
-              <li>PostgreSQL</li>
-              <li>JWT</li>
-              <li>GitHub</li>
-              <li>Jira</li>
-              <li>Confluence</li>
+              <li>React Native</li><li>Expo</li><li>Express.js</li><li>PostgreSQL</li><li>JWT</li><li>GitHub</li><li>Jira</li><li>Confluence</li>
             </ul>
           </div>
         </article>
@@ -420,22 +372,15 @@
         <article class="project">
           <div class="project__head">
             <h3 class="project__title">EcoLogic AI</h3>
-            <p class="project__kind">
-              Sustainability analytics platform for restaurant owners
-            </p>
+            <p class="project__kind">Sustainability analytics platform for restaurant owners</p>
           </div>
-
           <div class="project__body">
-            <p class="project__desc">
-              Created a full-stack platform that helps restaurants measure
-              food-waste and utility emissions, track operating costs, and
-              explore AI-powered sustainability recommendations.
-            </p>
-
+            <ul class="points">
+              <li>Developed a full-stack sustainability analytics platform that lets restaurant owners track food waste, utility use, and ingredient data to measure carbon emissions.</li>
+              <li>Built backend services and PostgreSQL data models to calculate carbon footprints and operating costs, and designed an AI-driven risk advisor that recommends ways to reduce emissions and costs.</li>
+            </ul>
             <ul class="chips" aria-label="Tech used">
-              <li>React</li>
-              <li>Node.js</li>
-              <li>PostgreSQL</li>
+              <li>React</li><li>Node.js</li><li>PostgreSQL</li>
             </ul>
           </div>
         </article>
@@ -445,26 +390,13 @@
             <h3 class="project__title">Unity 3D Adventure</h3>
             <p class="project__kind">3D game</p>
           </div>
-
           <div class="project__body">
-            <img
-              class="project__media"
-              src="unitygame.jpg"
-              alt="Unity 3D game screenshot"
-              loading="lazy"
-              onerror="this.remove()"
-            />
-
+            <img class="project__media" src="unitygame.jpg" alt="Unity 3D game screenshot" loading="lazy" onerror="this.remove()" />
             <p class="project__desc">
-              3D adventure game with custom mechanics, physics-based
-              interactions, and dynamic camera systems.
+              3D adventure game with custom mechanics, physics-based interactions, and dynamic camera systems.
             </p>
-
             <ul class="chips" aria-label="Tech used">
-              <li>Unity</li>
-              <li>C#</li>
-              <li>Physics</li>
-              <li>Collision Detection</li>
+              <li>Unity</li><li>C#</li><li>Physics</li><li>Collision Detection</li>
             </ul>
           </div>
         </article>
@@ -475,13 +407,7 @@
     <!-- EXPERIENCE -->
     <section class="band" id="experience" aria-labelledby="experience-title">
       <div class="xp">
-
-        <div class="xp__heading">
-          <p class="section-eyebrow">WHERE I’VE MADE AN IMPACT</p>
-          <h2 class="band__title xp__title" id="experience-title">
-            Experience<span class="title-dot">.</span>
-          </h2>
-        </div>
+        <h2 class="band__title xp__title" id="experience-title">Experience</h2>
 
         <div class="xp__list">
 
@@ -490,15 +416,14 @@
               <span class="role__dates">May 2026 – Sep 2026</span>
               <span class="role__place">Toronto, ON</span>
             </p>
-
             <div>
               <h3 class="role__title">Software Engineer</h3>
               <p class="role__org">smartARM</p>
-              <p class="role__summary">
-                Built and tested Python software for an AI-powered prosthetic
-                arm, integrating sensor-driven control with computer vision
-                and adaptive grip features.
-              </p>
+              <ul class="points">
+                <li>Developed and maintained Python software for an AI-powered prosthetic arm, processing sensor inputs to drive responsive device behaviour and adaptive control.</li>
+                <li>Wrote and maintained automated tests with pytest to validate device software, catch defects, and detect regressions after code changes.</li>
+                <li>Built computer vision and machine learning features for object recognition and grip adaptation, and integrated them into the arm’s control software.</li>
+              </ul>
             </div>
           </article>
 
@@ -507,15 +432,14 @@
               <span class="role__dates">Sep 2025 – Apr 2026</span>
               <span class="role__place">London, ON</span>
             </p>
-
             <div>
               <h3 class="role__title">Outreach Coordinator</h3>
               <p class="role__org">Western Engineering Outreach</p>
-              <p class="role__summary">
-                Revamped Western Engineering’s EDID webpage using stakeholder
-                feedback and created campaign content showcasing diverse
-                pathways into engineering.
-              </p>
+              <ul class="points">
+                <li>Audited EDIDA resources across Western University and the London community, selecting relevant resources and leading a comprehensive revamp of Western Engineering’s long-outdated EDID webpage.</li>
+                <li>Presented findings to Western Engineering’s Inclusivity Subcommittee, incorporated stakeholder feedback, and reorganized resources into accessible sections covering reporting, training, wellness, accessibility, and community networks.</li>
+                <li>Created We Made It campaign content showcasing diverse engineering careers to encourage young women to enter the field.</li>
+              </ul>
             </div>
           </article>
 
@@ -524,15 +448,13 @@
               <span class="role__dates">May 2025 – Sep 2025</span>
               <span class="role__place">London, ON</span>
             </p>
-
             <div>
               <h3 class="role__title">Web Designer</h3>
               <p class="role__org">St. Joseph’s Health Care</p>
-              <p class="role__summary">
-                Redesigned Research 2 Practice webpages with custom HTML/CSS
-                components and accessibility improvements to make research
-                opportunities easier to navigate.
-              </p>
+              <ul class="points">
+                <li>Redesigned the Research 2 Practice Get Involved webpage using HTML and CSS to clarify graduate and undergraduate opportunities, contributing to increased applicant interest.</li>
+                <li>Implemented custom frontend components and accessibility improvements while collaborating with Parkwood Institute Research Scientist and Research Coordinators to incorporate their feedback.</li>
+              </ul>
             </div>
           </article>
 
@@ -541,15 +463,13 @@
               <span class="role__dates">Jul 2025 – Sep 2025</span>
               <span class="role__place">London, ON</span>
             </p>
-
             <div>
               <h3 class="role__title">Special Events Program Planner</h3>
               <p class="role__org">Thames Valley District School Board</p>
-              <p class="role__summary">
-                Coordinated Best First Day’s distribution of 4,000 backpacks,
-                mobilizing community partners, volunteers, donations, and
-                sponsorship support.
-              </p>
+              <ul class="points">
+                <li>Led Best First Day, packing and distributing 4,000 backpacks to students across the Thames Valley District School Board.</li>
+                <li>Coordinated with organizations including PowerCo, TD Canada Trust, Canada Life, Stantech, GTel, Tricar, and the office of MPP Peggy Sattler to recruit volunteers and collect donations. Developed sponsorship packages and marketing support to strengthen future donor relationships.</li>
+              </ul>
             </div>
           </article>
 
@@ -558,15 +478,13 @@
               <span class="role__dates">May 2023 – Sep 2023</span>
               <span class="role__place">London, ON</span>
             </p>
-
             <div>
               <h3 class="role__title">Research Metrics Assistant</h3>
               <p class="role__org">Faculty of Western Engineering</p>
-              <p class="role__summary">
-                Analyzed research publication and citation data and redesigned
-                Western Engineering’s research homepage to improve content
-                clarity and navigation.
-              </p>
+              <ul class="points">
+                <li>Analyzed publication and citation data and collaborated with research faculty and communications staff to verify information, support research reporting, and coordinate website updates.</li>
+                <li>Led the re-design of the research homepage with a video banner, team photography, and reorganized content sections to improve information presentation and navigation.</li>
+              </ul>
             </div>
           </article>
 
@@ -584,23 +502,14 @@
           <p class="lead__dates">Mar 2025 – Jan 2026</p>
           <h3 class="lead__title">Vice-President Communications</h3>
           <p class="lead__org">Canadian Engineering Leadership Conference</p>
-
           <p class="lead__desc">
-            Led conference branding and digital communications for a national
-            conference engaging 200+ engineering students from 44 institutions
-            across Canada. Oversaw media creation, and branding for CELC 2026.
+            Led conference branding and digital communications for a national conference engaging
+            200+ engineering students from 44 institutions across Canada. Oversaw media creation,
+            and branding for CELC 2026.
           </p>
-
-          <a
-            class="lead__link"
-            target="_blank"
-            rel="noopener"
-            href="https://www.eng.uwo.ca/media/news/2026/Western-Engineering-Hosts-National-Conference-on-Leadership-in-Engineering.html"
-          >
-            Read the news story
-            <span class="sr-only">
-              about the Canadian Engineering Leadership Conference
-            </span>
+          <a class="lead__link" target="_blank" rel="noopener"
+             href="https://www.eng.uwo.ca/media/news/2026/Western-Engineering-Hosts-National-Conference-on-Leadership-in-Engineering.html">
+            Read the news story<span class="sr-only"> about the Canadian Engineering Leadership Conference</span>
           </a>
         </article>
 
@@ -608,23 +517,13 @@
           <p class="lead__dates">Mar 2024 – Nov 2024</p>
           <h3 class="lead__title">Vice-President Communications</h3>
           <p class="lead__org">Conference on Diversity in Engineering</p>
-
           <p class="lead__desc">
-            Directed digital branding and communications for a national
-            conference, launched the official website, and coordinated
-            sponsor and delegate materials.
+            Directed digital branding and communications for a national conference, launched the
+            official website, and coordinated sponsor and delegate materials.
           </p>
-
-          <a
-            class="lead__link"
-            target="_blank"
-            rel="noopener"
-            href="https://www.eng.uwo.ca/media/news/2024/Western-Engineering-Hosts-National-Conference-on-Diversity-in-Engineering.html"
-          >
-            Read the news story
-            <span class="sr-only">
-              about the Conference on Diversity in Engineering
-            </span>
+          <a class="lead__link" target="_blank" rel="noopener"
+             href="https://www.eng.uwo.ca/media/news/2024/Western-Engineering-Hosts-National-Conference-on-Diversity-in-Engineering.html">
+            Read the news story<span class="sr-only"> about the Conference on Diversity in Engineering</span>
           </a>
         </article>
 
@@ -632,11 +531,9 @@
           <p class="lead__dates">Sep 2023 – Apr 2025</p>
           <h3 class="lead__title">Wellness Commissioner</h3>
           <p class="lead__org">Western Undergraduate Engineering Society</p>
-
           <p class="lead__desc">
-            Led wellness initiatives for engineering students, collaborated
-            on mental health strategy, and advocated for improved student
-            support resources.
+            Led wellness initiatives for engineering students, collaborated on mental health strategy,
+            and advocated for improved student support resources.
           </p>
         </article>
 
@@ -651,30 +548,18 @@
     <p class="contact__lede">Email me or find me on LinkedIn.</p>
 
     <div class="contact__links">
-      <a class="contact__mail" href="mailto:yusra.choudhary5@gmail.com">
-        yusra.choudhary5@gmail.com
-      </a>
-
-      <a
-        class="contact__in"
-        href="https://www.linkedin.com/in/yusrachoudhary/"
-        target="_blank"
-        rel="noopener"
-      >
+      <a class="contact__mail" href="mailto:yusra.choudhary5@gmail.com">yusra.choudhary5@gmail.com</a>
+      <a class="contact__in" href="https://www.linkedin.com/in/yusrachoudhary/" target="_blank" rel="noopener">
         linkedin.com/in/yusrachoudhary
       </a>
     </div>
 
-    <p class="contact__fine">
-      © <span id="year">2026</span> Yusra Choudhary
-    </p>
+    <p class="contact__fine">© <span id="year">2026</span> Yusra Choudhary</p>
   </footer>
 
   <!-- Floating image preview for project rows (desktop hover only) -->
   <div class="peek" id="peek" aria-hidden="true">
-    <div class="peek__inner">
-      <img src="" alt="" />
-    </div>
+    <div class="peek__inner"><img src="" alt="" /></div>
   </div>
 
   <script src="script.js"></script>
